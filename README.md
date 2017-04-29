@@ -16,7 +16,8 @@ Inside your `.eslintrc` file, pass this resolver to `eslint-plugin-import`:
 settings: {
   'import/resolver': {
     'global-import': {
-      root: __dirname
+      root: __dirname,
+      prefix: '@'
     }
   }
 }

@@ -4,9 +4,9 @@ const path = require('path')
 exports.interfaceVersion = 2
 
 exports.resolve = (source, file, config) => {
-  if (/^@/.test(source)) {
+  if ((new RegExp(`^${config.prefix || '@'}`)).test(source)) {
     return nodeResolve(
-      path.relative(file, source.replace('@', config.root)).replace('../', './'),
+      path.relative(file, source.replace(config.prefix, config.root)).replace('../', './'),
       file,
       config
     )
