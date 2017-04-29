@@ -13,8 +13,12 @@ npm install --save-dev eslint-plugin-import eslint-import-resolver-global-import
 
 Inside your `.eslintrc` file, pass this resolver to `eslint-plugin-import`:
 ```
-"settings": {
-  "import/resolver": "global-import"
+settings: {
+  'import/resolver': {
+    'global-import': {
+      root: __dirname
+    }
+  }
 }
 ```
 
