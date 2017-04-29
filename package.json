@@ -1,0 +1,33 @@
+{
+  "name": "eslint-import-resolver-global-import",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "babel-plugin-root-import resolver for eslint-plugin-import",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanzotov/eslint-import-resolver-babel-plugin-root-import.git"
+  },
+  "author": {
+    "name": "Ivan Zotov",
+    "email": "ivanzotov@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-plugin-import",
+    "eslint-import-resolver",
+    "babel",
+    "babel-plugin",
+    "module",
+    "babel-plugin-root-import",
+    "rewrite",
+    "resolve",
+    "rename",
+    "mapping",
+    "require",
+    "import"
+  ],
+  "dependencies": {
+    "eslint-import-resolver-node": "^0.3.0"
+  }
+}
